@@ -62,7 +62,9 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("Bitcoin", "Nothing selected");
             }
         });
-        letsDoSomeNetworking(BASE_URL+"BRL");
+
+        spinner.setSelection(adapter.getPosition("BRL"));
+        //letsDoSomeNetworking(BASE_URL+"BRL");
 
     }
 
